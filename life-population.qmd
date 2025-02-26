@@ -1,0 +1,21 @@
+---
+title: "Life Expectancy and Population"
+format: html
+---
+
+# Description
+
+This is an analysis on the relationship between life expectancy and population
+
+
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+
+gapminder=pd.read_csv("gapminder.csv")
+
+plt.scatter(gapminder['population_millions'], gapminder['life_expectancy'])
+plt.title("Population vs Life Expectancy")
+plt.xlabel("Population")
+plt.ylabel("Life Expectancy")
+```

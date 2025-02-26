@@ -1,0 +1,13 @@
+---
+title: "The Gapminder Dataset"
+format: html
+---
+
+# Description
+
+The Gapminder dataset is a dataset that takes into account a country, the continent that it is in, it's population, it's GDP per capita, and it's life expectancy.
+
+
+[Life Expectancy and GDP per Capita](life-gdp.qmd)
+[Life Expectancy and Population](life-population.qmd)
+[Country Analysis](country.qmd)

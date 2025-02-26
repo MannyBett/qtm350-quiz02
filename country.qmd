@@ -1,0 +1,56 @@
+---
+title: "Country Analysis"
+format: html
+---
+
+# Introduction
+
+This is an analysis on the relationship between life expectancy and GDP per Capita for a given country (Iran)
+
+
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+
+gapminder=pd.read_csv("gapminder.csv")
+
+gapmindercountry = gapminder[gapminder['country'] == "Afghanistan"]
+
+plt.scatter(gapmindercountry['year'], gapmindercountry['gdp_per_capita'])
+plt.title("GDP per Capita vs Time")
+plt.xlabel("Time")
+plt.ylabel("GDP per Capita")
+
+```
+
+
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+
+gapminder=pd.read_csv("gapminder.csv")
+
+gapmindercountry = gapminder[gapminder['country'] == "Afghanistan"]
+
+plt.scatter(gapmindercountry['year'], gapmindercountry['life_expectancy'])
+plt.title("life_expectancy vs Time")
+plt.xlabel("Time")
+plt.ylabel("life_expectancy")
+
+```
+
+
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+
+gapminder=pd.read_csv("gapminder.csv")
+
+gapmindercountry = gapminder[gapminder['country'] == "Afghanistan"]
+
+plt.scatter(gapmindercountry['year'], gapmindercountry['population_millions'])
+plt.title("Population vs Time")
+plt.xlabel("Time")
+plt.ylabel("Population")
+
+```
